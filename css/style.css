@@ -96,25 +96,29 @@ body {
 }
 
 .main-section {
-  width: 1280px;
+  max-width: 1280px;
   height: 700px;
   z-index: 0;
   overflow: hidden;
   position: relative;
+  border-radius: 8px;
 }
 
 .main-section__wrapper {
   position: absolute;
   z-index: 2;
+  margin-left: 107px;
 }
 
 .main-section__bg {
   position: absolute;
   z-index: -2;
+  overflow: hidden;
+  object-fit: cover;
+  background: transparent;
 }
 
 .main-section__button {
-  margin-left: 107px;
   background: #183B56;
   border-radius: 8px;
   outline: none;
@@ -141,13 +145,11 @@ body {
   justify-content: flex-start;
   width: 652px;
   padding-top: 62px;
-  margin-left: 107px;
   margin-bottom: 52px;
 }
 
 .main-section__links {
   display: flex;
-  margin-left: 107px;
   padding: 0;
   align-items: center;
   font-family: HKGrotesk;
@@ -199,5 +201,103 @@ body {
   list-style-type: none;
   margin-left: 6px;
   margin-right: 31px;
+}
+
+.menu-burger {
+  display: none;
+}
+
+@media (max-width: 1300px) {
+  .container-top {
+    max-width: 960px;
+  }
+  .header__top {
+    justify-content: space-around;
+  }
+  .header-menu__logo {
+    margin-right: 0;
+  }
+}
+
+.main-section__wrapper {
+  margin-left: 107px;
+}
+
+@media (max-width: 992px) {
+  .container-top {
+    max-width: 760px;
+  }
+  .header-menu__item {
+    margin-left: 20px;
+  }
+  .header-menu__button {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-top {
+    max-width: 728px;
+  }
+  .header__top {
+    justify-content: space-between;
+    margin-right: 37px;
+    margin-left: 42px;
+    padding: 23px 0px;
+    margin-bottom: 24px;
+  }
+  .header-menu {
+    display: none;
+  }
+  .header-menu__button {
+    display: none;
+  }
+  .menu-burger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 24px;
+    height: 17px;
+    padding: 0;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .menu-burger__line {
+    width: 22px;
+    height: 2.2px;
+    right: 1px;
+    top: calc(50% - 2.2px/2 - 0.15px);
+    background: #3A4C66;
+  }
+  .main-section__bg {
+    max-width: 728px;
+    height: 624px;
+  }
+  .main-section__wrapper {
+    margin-left: 29px;
+  }
+  .main-section__cool {
+    padding-top: 38px;
+  }
+  .cool__span {
+    margin-bottom: 23px;
+  }
+  .cool__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.2px;
+    margin-bottom: 25px;
+  }
+  .cool__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    width: 400px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
