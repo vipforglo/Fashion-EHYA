@@ -20,6 +20,77 @@
         margin-left: 20px
       &__button
         margin-left: 0px
+  .collection
+    &-wrapper
+      flex-wrap: wrap
+      justify-content: center
+    &__images-wrapper
+      width: 670px
+      height: auto
+      justify-content: space-between
+    &__vertical
+      width: 320px
+    &__horizontal
+      &-photo
+        width: 320px
+        height: 230px
+    &__text
+      width: 95%
+      margin-top: 32px
+      padding-left: 0
+    &__title
+      font-size: 48px
+      margin-bottom: 30px
+    &__subtitle
+      font-size: 20px
+      word-break: break-word
+      margin-bottom: 24px
+    &__looking
+      font-size: 18px
+
+@media (min-width: 992px)
+  a
+    &:hover
+      color: $hover
+  .navbar
+    &-top__button
+      &:hover
+        color: $main
+        border-color: $main
+  .collection
+    &__looking-icon
+      &:hover
+        color: $hover
+  .button
+    &:hover
+      background-color: $hover
+
+@media (max-width: 1200px)
+  .collection
+    padding-top: 49px
+    &-wrapper
+      width: 97%
+    &__images-wrapper
+      width: 605px
+      height: 415px
+      justify-content: space-around
+    &__vertical
+      width: 270px
+    &__horizontal
+      &-photo
+        width: 270px
+        height: 200px
+    &__text
+      padding-left: 10px
+    &__title
+      font-size: 44px
+      margin-bottom: 0
+      margin-top: 0
+    &__subtitle
+      font-size: 16px
+      margin-bottom: 30px
+    &__looking
+      font-size: 16px
 
 @media (max-width: 768px)
   .container-top
@@ -83,6 +154,32 @@
       font-size: 18px
       line-height: 32px
       width: 400px
+
+@media (max-width: 710px)
+  .collection
+    &__images-wrapper
+      width: 605px
+      height: 415px
+      justify-content: space-around
+    &__vertical
+      width: 270px
+    &__horizontal
+      &-photo
+        width: 270px
+        height: 200px
+
+@media (max-width: 610px)
+  .collection
+    &__images-wrapper
+      width: 605px
+      height: 368px
+    &__vertical
+      width: 240px
+    &__horizontal
+      &-photo
+        width: 240px
+        height: 170px
+
 @media (max-width: 576px)
   .container
     &-top
@@ -124,7 +221,6 @@
         margin: 0
   .links__link
     margin-right: 16px
-
   .cool
     &__span
       width: 196px
@@ -145,3 +241,35 @@
       width: 280px
       height: 140px
       text-align: center
+  .collection
+    padding-top: 33px
+    &__images-wrapper
+      flex-direction: column
+      align-items: center
+      height: 415px
+    &__vertical
+      width: auto
+      &-photo
+        width: 290px
+        height: 300px
+        object-fit: cover
+        border-radius: 4px
+    &__horizontal
+      flex-direction: row
+      width: 290px
+      justify-content: space-between
+      &-photo
+        width: 138px
+        height: 97px
+    &__text
+      text-align: center
+    &__title
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 21px
+    &__subtitle
+      font-size: 16px
+      line-height: 28px
+      padding: 0 10px
+    &__looking
+      display: none
