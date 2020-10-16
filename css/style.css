@@ -116,6 +116,8 @@ body {
   overflow: hidden;
   object-fit: cover;
   background: transparent;
+  width: 100%;
+  height: 100%;
 }
 
 .main-section__button {
@@ -171,7 +173,7 @@ body {
   color: #36B37E;
   background: rgba(54, 179, 126, 0.1);
   border-radius: 2000px;
-  width: 28%;
+  width: 29%;
   margin-bottom: 28px;
 }
 
@@ -238,6 +240,7 @@ body {
 @media (max-width: 768px) {
   .container-top {
     max-width: 728px;
+    width: 95%;
   }
   .header__top {
     justify-content: space-between;
@@ -280,6 +283,13 @@ body {
   }
   .main-section__cool {
     padding-top: 38px;
+    margin-bottom: 35px;
+  }
+  .main-section__button {
+    margin-bottom: 24px;
+  }
+  .links__link {
+    margin-right: 20px;
   }
   .cool__span {
     margin-bottom: 23px;
@@ -298,6 +308,78 @@ body {
     font-size: 18px;
     line-height: 32px;
     width: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-top {
+    width: 100%;
+  }
+  .main-section {
+    border-radius: 0px;
+    height: 899px;
+  }
+  .main-section__bg {
+    height: 100%;
+    margin-left: calc(115% - 1210px);
+    width: unset;
+    max-width: 1219px;
+  }
+  .main-section__cool {
+    padding-top: 381px;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  .main-section__button-link {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .main-section__button {
+    padding: 13px 49px;
+    border: 1px solid #183B56;
+    margin-bottom: 22px;
+    padding: 11px 49px;
+  }
+  .main-section__wrapper {
+    margin-left: 0%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-section__links {
+    flex-wrap: wrap;
+    width: 325px;
+    justify-content: center;
+    margin: 0;
+  }
+  .links__link {
+    margin-right: 16px;
+  }
+  .cool__span {
+    width: 196px;
+    height: 24px;
+    margin-bottom: 20px;
+  }
+  .cool__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .cool__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    width: 280px;
+    height: 140px;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
