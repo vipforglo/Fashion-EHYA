@@ -9,6 +9,7 @@
 
 </head>
 <body>
+
   <div class="header">
       <div class="container-top">
         <div class="header__top">
@@ -73,6 +74,7 @@
       </div>
   </div>
     <!-- /.header -->
+
   <section class="collection">
     <div class="container">
       <div class="collection-wrapper">
@@ -105,6 +107,26 @@
     <!-- /.container -->
   </section>
   <!-- /.collection -->
+
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-wrapper">
+        <div class="newsletter-content">
+          <h2 class="newsletter-title newsletter__title">
+            Подпишитесь
+          </h2>
+          <p class="newsletter__text">Напишите свой адрес электронной почты. <br class="enter"> Мы будем присылать вам новости из мира моды.</p>
+        </div>
+        <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
+          <input type="email" class="subscribe__input" placeholder="Ваш Email" name="email" required />
+          <button class="subscribe__button">Подписаться</button>
+        </form>
+      </div>
+      <!-- /.newsletter-wrapper -->
+    </div>
+  </section>
+  <!-- /.newsletter -->
+
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
@@ -209,6 +231,6 @@
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
-    
+
 </body>
 </html>
