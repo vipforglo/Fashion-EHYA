@@ -291,6 +291,136 @@ body {
   margin-left: 15px;
 }
 
+.stories {
+  border-top: 1px solid #E5EAF4;
+  padding-top: 126px;
+  padding-bottom: 200px;
+}
+
+.stories-wrapper {
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stories-left {
+  max-width: 360px;
+  position: relative;
+}
+
+.stories-left__text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #5A7184;
+}
+
+.stories-right {
+  display: flex;
+  width: 654px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stories__stamp {
+  width: 107px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #36B37E;
+  background: rgba(54, 179, 126, 0.1);
+  border-radius: 2000px;
+  padding: 6px 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.stories__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.stories__title {
+  font-family: HKGrotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  color: #183B56;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.stories__subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #5A7184;
+}
+
+.stories-text {
+  width: 312px;
+  height: 178px;
+  position: absolute;
+  top: 294px;
+  left: 10px;
+  z-index: 5;
+  background: #FAFDFF;
+}
+
+.stories-text__title {
+  font-family: HKGrotesk;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  color: #183B56;
+  margin-bottom: 18px;
+  width: 80%;
+  margin-left: 20px;
+}
+
+.stories-text__link {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-style: normal;
+  color: #1565D8;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.stories__card {
+  width: 312px;
+  height: 317px;
+  position: relative;
+}
+
+.stories-arrows {
+  position: absolute;
+  top: 350px;
+  left: 0;
+}
+
+.stories-arrows__right {
+  margin-left: 22px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
 .newsletter {
   position: relative;
   padding: 96px 0;
