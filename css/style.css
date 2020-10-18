@@ -62,11 +62,11 @@ body {
 }
 
 .header-menu__item {
-  margin-left: 40px;
+  margin-left: 42px;
 }
 
 .header-menu__logo {
-  margin-right: 365px;
+  margin-right: 354px;
 }
 
 .header-menu__button {
@@ -164,7 +164,8 @@ body {
 }
 
 .cool__span {
-  padding: 3px 16px;
+  font-family: Open Sans;
+  padding: 6px 12px;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -173,8 +174,8 @@ body {
   color: #36B37E;
   background: rgba(54, 179, 126, 0.1);
   border-radius: 2000px;
-  width: 29%;
-  margin-bottom: 28px;
+  width: 27%;
+  margin-bottom: 21px;
 }
 
 .cool__title {
@@ -210,7 +211,7 @@ body {
 }
 
 .collection {
-  padding-top: 89px;
+  padding-top: 83px;
   padding-bottom: 50px;
 }
 
@@ -244,6 +245,7 @@ body {
 .collection__horizontal-photo {
   width: 320px;
   height: 230px;
+  margin-bottom: 5px;
 }
 
 .collection__horizontal-image {
@@ -261,7 +263,6 @@ body {
   font-weight: bold;
   font-size: 48px;
   line-height: 60px;
-  letter-spacing: 1.2px;
   color: #183B56;
   margin: 0;
   margin-top: 4px;
@@ -269,6 +270,7 @@ body {
 }
 
 .collection__subtitle {
+  font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -279,6 +281,7 @@ body {
 }
 
 .collection__looking {
+  font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -291,21 +294,66 @@ body {
   margin-left: 15px;
 }
 
+.feeds {
+  padding-top: 105px;
+  padding-bottom: 80px;
+}
+
+.feeds-icon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 38px;
+}
+
+.slider-text {
+  font-family: HKGrotesk;
+  max-width: 800px;
+  color: #5A7184;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 42px;
+  margin-bottom: 28px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+}
+
+.slider-author {
+  font-family: HKGrotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #5A7184;
+  text-align: center;
+  display: block;
+  margin-bottom: 60px;
+}
+
+.swipe-pagination {
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  background-color: #5A7184;
+  margin-left: 10px;
+}
+
 .stories {
   border-top: 1px solid #E5EAF4;
-  padding-top: 126px;
-  padding-bottom: 200px;
+  padding-top: 121px;
+  padding-bottom: 291px;
 }
 
 .stories-wrapper {
-  width: 1140px;
+  max-width: 1140px;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
 
 .stories-left {
-  max-width: 360px;
+  max-width: 375px;
   position: relative;
 }
 
@@ -326,7 +374,7 @@ body {
 }
 
 .stories__stamp {
-  width: 107px;
+  width: 101px;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -356,7 +404,7 @@ body {
   line-height: 60px;
   color: #183B56;
   margin-top: 20px;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 .stories__subtitle {
@@ -365,6 +413,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   color: #5A7184;
+  font-family: Open Sans;
 }
 
 .stories-text {
@@ -384,9 +433,9 @@ body {
   font-size: 22px;
   line-height: 32px;
   color: #183B56;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   width: 80%;
-  margin-left: 20px;
+  margin-left: 21px;
 }
 
 .stories-text__link {
@@ -397,7 +446,7 @@ body {
   font-style: normal;
   color: #1565D8;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 23px;
 }
 
 .stories__card {
@@ -408,8 +457,12 @@ body {
 
 .stories-arrows {
   position: absolute;
-  top: 350px;
+  top: 358px;
   left: 0;
+  width: 132px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .stories-arrows__right {
@@ -423,7 +476,8 @@ body {
 
 .newsletter {
   position: relative;
-  padding: 96px 0;
+  padding-top: 91px;
+  padding-bottom: 82px;
   background-image: url(../img/newsletter-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -448,8 +502,6 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
-  line-height: 60px;
-  letter-spacing: 1.1px;
   color: #ffffff;
   margin: 0;
 }
@@ -579,6 +631,85 @@ a {
   margin-left: 107px;
 }
 
+@media (max-width: 1200px) {
+  .collection {
+    padding-top: 49px;
+  }
+  .collection-wrapper {
+    width: 97%;
+  }
+  .collection__images-wrapper {
+    width: 605px;
+    height: 415px;
+    justify-content: space-around;
+  }
+  .collection__vertical {
+    width: 270px;
+  }
+  .collection__horizontal-photo {
+    width: 270px;
+    height: 200px;
+  }
+  .collection__text {
+    padding-left: 10px;
+  }
+  .collection__title {
+    font-size: 44px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .collection__subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .collection__looking {
+    font-size: 16px;
+  }
+  .newsletter-wrapper {
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .newsletter-content {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .newsletter__text {
+    text-align: center;
+  }
+  .subscribe {
+    margin-right: 0;
+  }
+  .container {
+    max-width: 960px;
+    margin: auto;
+  }
+  .footer-wrapper {
+    grid-template-columns: 250px 180px 175px 175px 150px;
+    grid-gap: 5px;
+  }
+  .stories-wrapper {
+    justify-content: center;
+  }
+  .stories-right {
+    max-width: 654px;
+  }
+  .stories__title {
+    font-size: 37px;
+    line-height: 50px;
+  }
+  .stories__subtitle {
+    font-size: 21px;
+    line-height: 36px;
+  }
+  .stories__card {
+    margin-right: 10px;
+  }
+}
+
 @media (max-width: 992px) {
   .container-top {
     max-width: 760px;
@@ -646,6 +777,7 @@ a {
   .footer-wrapper__logo {
     grid-row: 1;
     grid-column: 1;
+    text-align: center;
   }
   .footer-wrapper__navigation {
     grid-row: 1;
@@ -667,6 +799,44 @@ a {
     max-width: 760px;
     margin: auto;
   }
+  .stories {
+    padding-top: 78px;
+  }
+  .stories-wrapper {
+    flex-wrap: wrap;
+  }
+  .stories__title {
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 21px;
+  }
+  .stories-left {
+    display: block;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    max-width: 585px;
+    height: 296px;
+  }
+  .stories-right {
+    padding-top: 36px;
+    max-width: 682px;
+  }
+  .stories__subtitle {
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 36px;
+  }
+  .stories__stamp {
+    margin: auto;
+  }
+  .stories-arrows {
+    top: unset;
+    margin-left: 39%;
+  }
+  .stories__card {
+    margin-right: 0px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -682,68 +852,6 @@ a {
   }
   .button:hover {
     background-color: #0187ee;
-  }
-}
-
-@media (max-width: 1200px) {
-  .collection {
-    padding-top: 49px;
-  }
-  .collection-wrapper {
-    width: 97%;
-  }
-  .collection__images-wrapper {
-    width: 605px;
-    height: 415px;
-    justify-content: space-around;
-  }
-  .collection__vertical {
-    width: 270px;
-  }
-  .collection__horizontal-photo {
-    width: 270px;
-    height: 200px;
-  }
-  .collection__text {
-    padding-left: 10px;
-  }
-  .collection__title {
-    font-size: 44px;
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-  .collection__subtitle {
-    font-size: 16px;
-    margin-bottom: 30px;
-  }
-  .collection__looking {
-    font-size: 16px;
-  }
-  .newsletter-wrapper {
-    width: 97%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .newsletter-content {
-    padding-left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .newsletter__text {
-    text-align: center;
-  }
-  .subscribe {
-    margin-right: 0;
-  }
-  .container {
-    max-width: 960px;
-    margin: auto;
-  }
-  .footer-wrapper {
-    grid-template-columns: 250px 180px 175px 175px 150px;
-    grid-gap: 5px;
   }
 }
 
@@ -809,7 +917,7 @@ a {
     padding: 64px 0;
   }
   .footer-wrapper {
-    grid-template-columns: 306px 281px 175px;
+    grid-template-columns: 306px 198px 175px;
   }
   .footer-wrapper__logo {
     grid-row: 1;
@@ -917,6 +1025,13 @@ a {
     grid-gap: 22px;
     grid-template-columns: 263px 174px 175px;
   }
+  .stories__title {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .stories-left {
+    max-width: 570px;
+  }
 }
 
 @media (max-width: 710px) {
@@ -939,6 +1054,10 @@ a {
   .container {
     max-width: 576px;
     margin: auto;
+  }
+  .stories__card {
+    width: 270px;
+    height: 277px;
   }
 }
 
