@@ -21,3 +21,17 @@ $(document).ready(function () {
 
   });
 });
+
+$(document).ready(function () {
+  var tabsItem = $('.tabs-item');
+  var contentItem = $('.card')
+  tabsItem.on('click', function (event) {
+    var activeContent = $(this).attr('data-target')
+    tabsItem.removeClass('tabs-item--active')
+    contentItem.removeClass('card--active')
+    $(activeContent).addClass('card--active');
+    $(this).addClass('tabs-item--active')
+
+  });
+
+});

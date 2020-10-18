@@ -196,7 +196,34 @@
     &:hover
       background-color: $hover
 
+  .link
+    &:hover
+      color: grey
+
+  .button
+    &:hover
+      background-color: grey
+      border: none
+
+  .button-enter:hover
+    background-color: grey
+
+  .link-blue:hover
+    color: grey
+
 @media (max-width: 992px)
+  body
+    padding-top: 53px
+  .button:hover
+    background-color: $text-color
+    border: none
+  .button-enter:hover
+    background-color: white
+  .link:hover
+    color: $text-color
+  .link-blue:hover
+    color: #1565D8
+
   .container-top
     max-width: 760px
   .header
@@ -267,6 +294,23 @@
   .container
     max-width: 760px
     margin: auto
+
+  .trending
+    padding-top: 30px
+    &-header
+      flex-direction: column
+      margin-bottom: 36px
+    &-title
+      margin-bottom: 9px
+  .card
+    &-wrapper
+      justify-content: space-around
+    &-picture
+      width: 280px
+      height: 350px
+
+  .slider-text
+    max-width: 630px
 
 @media (max-width: 768px)
   .container-top
@@ -345,6 +389,9 @@
       line-height: 60px
     &-left
       max-width: 570px
+
+  .slider-text
+    max-width: 530px
 @media (max-width: 710px)
   .collection
     &__images-wrapper
@@ -367,10 +414,23 @@
     margin: auto
 
   .stories
+    padding-bottom: 30px
     &__card
       width: 270px
-      height: 277px
-
+      // height: 408px
+      margin-bottom: 151px
+    &-right
+      display: block
+      width: unset
+    &-text
+      width: 270px
+      height: 150px
+      &__title
+        font-family: HKGrotesk
+        font-style: normal
+        font-weight: 500
+        font-size: 20px
+        line-height: 24px
 @media (max-width: 610px)
   .collection
     &__images-wrapper
@@ -554,3 +614,49 @@
       line-height: 24px
       margin-top: 9px
       margin-bottom: 25px
+
+  .stories
+    padding-top: 48px
+    &__delete
+      display: none
+    &__title
+      font-size: 28px
+      line-height: 36px
+      margin-top: 24px
+      margin-bottom: 16px
+    &__subtitle
+      font-size: 16px
+      line-height: 28px
+    &-arrows
+      margin-left: 4em
+
+  .trending
+    &-title
+      font-size: 28px
+      line-height: 36px
+
+  .card
+    width: 47%
+    &-wrapper
+      max-width: 300px
+      margin: 0 auto
+    &-block
+      justify-content: start
+    &-name
+      font-size: 16px
+      line-height: 20px
+    &-picture
+      width: 140px
+      height: 170px
+    &-block
+      &__price
+        width: 36px
+        height: 24px
+      &__cart
+        width: 23px
+        height: 32px
+
+  .slider-text
+    max-width: 280px
+    font-size: 18px
+    line-height: 36px

@@ -294,6 +294,110 @@ body {
   margin-left: 15px;
 }
 
+.trending {
+  margin-top: 50px;
+}
+
+.trending-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trending-title {
+  font-family: HKGrotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  color: #183B56;
+}
+
+.trending-menu__list {
+  display: flex;
+  list-style-type: none;
+}
+
+.trending-menu__link {
+  text-decoration: none;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.card {
+  width: 260px;
+  margin-bottom: 56px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.card-picture {
+  width: 260px;
+  height: 350px;
+}
+
+.card-image {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card-name {
+  font-family: HKGrotesk;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #5A7184;
+  margin-top: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.card-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  width: 327px;
+  list-style-type: none;
+  font-family: Open Sans;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.tabs-item {
+  cursor: pointer;
+  color: #5A7184;
+  font-weight: normal;
+}
+
+.tabs-item--active {
+  color: #183B56;
+  font-weight: bold;
+}
+
+.card {
+  visibility: hidden;
+}
+
+.card--active {
+  visibility: visible;
+}
+
 .feeds {
   padding-top: 105px;
   padding-bottom: 80px;
@@ -314,7 +418,7 @@ body {
   line-height: 42px;
   margin-bottom: 28px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -853,9 +957,38 @@ a {
   .button:hover {
     background-color: #0187ee;
   }
+  .link:hover {
+    color: grey;
+  }
+  .button:hover {
+    background-color: grey;
+    border: none;
+  }
+  .button-enter:hover {
+    background-color: grey;
+  }
+  .link-blue:hover {
+    color: grey;
+  }
 }
 
 @media (max-width: 992px) {
+  body {
+    padding-top: 53px;
+  }
+  .button:hover {
+    background-color: #5A7184;
+    border: none;
+  }
+  .button-enter:hover {
+    background-color: white;
+  }
+  .link:hover {
+    color: #5A7184;
+  }
+  .link-blue:hover {
+    color: #1565D8;
+  }
   .container-top {
     max-width: 760px;
   }
@@ -942,6 +1075,26 @@ a {
   .container {
     max-width: 760px;
     margin: auto;
+  }
+  .trending {
+    padding-top: 30px;
+  }
+  .trending-header {
+    flex-direction: column;
+    margin-bottom: 36px;
+  }
+  .trending-title {
+    margin-bottom: 9px;
+  }
+  .card-wrapper {
+    justify-content: space-around;
+  }
+  .card-picture {
+    width: 280px;
+    height: 350px;
+  }
+  .slider-text {
+    max-width: 630px;
   }
 }
 
@@ -1032,6 +1185,9 @@ a {
   .stories-left {
     max-width: 570px;
   }
+  .slider-text {
+    max-width: 530px;
+  }
 }
 
 @media (max-width: 710px) {
@@ -1055,9 +1211,27 @@ a {
     max-width: 576px;
     margin: auto;
   }
+  .stories {
+    padding-bottom: 30px;
+  }
   .stories__card {
     width: 270px;
-    height: 277px;
+    margin-bottom: 151px;
+  }
+  .stories-right {
+    display: block;
+    width: unset;
+  }
+  .stories-text {
+    width: 270px;
+    height: 150px;
+  }
+  .stories-text__title {
+    font-family: HKGrotesk;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
@@ -1278,6 +1452,60 @@ a {
     line-height: 24px;
     margin-top: 9px;
     margin-bottom: 25px;
+  }
+  .stories {
+    padding-top: 48px;
+  }
+  .stories__delete {
+    display: none;
+  }
+  .stories__title {
+    font-size: 28px;
+    line-height: 36px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+  .stories__subtitle {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .stories-arrows {
+    margin-left: 4em;
+  }
+  .trending-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .card {
+    width: 47%;
+  }
+  .card-wrapper {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .card-block {
+    justify-content: start;
+  }
+  .card-name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .card-picture {
+    width: 140px;
+    height: 170px;
+  }
+  .card-block__price {
+    width: 36px;
+    height: 24px;
+  }
+  .card-block__cart {
+    width: 23px;
+    height: 32px;
+  }
+  .slider-text {
+    max-width: 280px;
+    font-size: 18px;
+    line-height: 36px;
   }
 }
 /*# sourceMappingURL=style.css.map */

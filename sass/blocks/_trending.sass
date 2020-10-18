@@ -1,0 +1,80 @@
+.trending
+  margin-top: 50px
+  &-header
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-title
+    font-family: HKGrotesk
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    color: #183B56
+
+  &-menu
+    &__list
+      display: flex
+      list-style-type: none
+    &__link
+      text-decoration: none
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 25px
+
+.card
+  width: 260px
+  margin-bottom: 56px
+
+  &-wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 10px
+  &-picture
+    width: 260px
+    height: 350px
+    // margin-bottom: 0
+  &-image
+    height: 100%
+    object-fit: cover
+    width: 100%
+    border-radius: 8px
+
+  &-name
+    font-family: HKGrotesk
+    font-weight: bold
+    font-size: 24px
+    line-height: 32px
+    color: $text-color
+    margin-top: 20px
+    text-align: left
+    margin-bottom: 10px
+    margin-left: 15px
+  &-block
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.tabs
+  display: flex
+  justify-content: space-between
+  width: 327px
+  list-style-type: none
+  font-family: Open Sans
+  font-size: 18px
+  line-height: 25px
+  &-item
+    cursor: pointer
+    color: $text-color
+    font-weight: normal
+  &-item--active
+    color: $text-title
+    font-weight: bold
+
+.card
+  visibility: hidden
+.card--active
+  visibility: visible
