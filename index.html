@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fashion-EHYA</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
+  <link rel="icon" href="favicon.ico" type="img/x-icon">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -37,9 +39,8 @@
               </li>
             </ul>
             
-              <button class="header-menu__button">
-                <a href="#" class="header-menu__button-link">Войти</a>
-              </button>
+              <a href="#" class="header-menu__button header-menu__button-link">Войти
+              </a>
 
               <button class="menu-burger">
                     <span class="menu-burger__line"></span>
@@ -57,9 +58,10 @@
             <p class="cool__text">Чтобы быть в тренде и стать модным, вам нужно носить отличную одежду и обновлять свой стиль. Всё это вы можете найти здесь. Начните сейчас. </p>
           </div>
 
-          <button class="main-section__button">
-            <a href="#" class="main-section__button-link">Подобрать одежду</a>
-          </button>
+          <form action="#">
+            <button class="main-section__button main-section__button-link">Подобрать одежду
+            </button>
+          </form>
 
           <ul class="main-section__links">
             <img src="img/icon-onlinepay.svg" alt="online-pay">
@@ -123,7 +125,7 @@
       </div>
       <!-- /.trending-header -->
       <div class=" card-wrapper">
-        <div class="card card--active new">
+        <div class="card card--active new best soon">
           <div class="card-picture">
             <img src="img/tab1.png" alt="Image: Tab1" class="card-image">
           </div>
@@ -133,7 +135,7 @@
             <img src="img/shopping-cart.svg" alt="cart" class="card-block__cart">
           </div>
         </div>
-        <div class="card card--active new">
+        <div class="card card--active new best soon">
           <div class="card-picture">
             <img src="img/tab2.png" alt="Image: Tab2" class="card-image">
           </div>
@@ -143,7 +145,7 @@
             <img src="img/shopping-cart.svg" alt="cart" class="card-block__cart">
           </div>
         </div>
-        <div class="card best card--active">
+        <div class="card best card--active new best soon">
           <div class="card-picture">
             <img src="img/tab3.png" alt="Image: Tab3" class="card-image">
           </div>
@@ -153,7 +155,7 @@
             <img src="img/shopping-cart.svg" alt="cart" class="card-block__cart">
           </div>
         </div>
-        <div class="card soon card--active">
+        <div class="card soon card--active new best">
           <div class="card-picture">
             <img src="img/tab4.png" alt="Image: Tab4" class="card-image">
           </div>
@@ -163,7 +165,7 @@
             <img src="img/shopping-cart.svg" alt="cart" class="card-block__cart">
           </div>
         </div>
-        <div class="card soon card--active">
+        <div class="card soon card--active new best soon">
           <div class="card-picture">
             <img src="img/tab5.png" alt="Image: Tab5" class="card-image">
           </div>
@@ -173,30 +175,30 @@
             <img src="img/shopping-cart.svg" alt="cart" class="card-block__cart">
           </div>
         </div>
-        <div class="card new card--active">
+        <div class="card new card--active new best soon">
           <div class="card-picture">
             <img src="img/tab6.png" alt="Image: Tab6" class="card-image">
           </div>
-          <h4 class="card-name">Holiday Vibes</h4>
+          <h4 class="card-name">Swaggie Shaggy</h4>
           <div class="card-block">
             <img src="img/$25.7.svg" alt="25.7" class="card-block__price">
             <img src="img/shopping-cart.svg" alt="cart" class="card-block__cart">
           </div>
         </div>
-        <div class="card soon card--active">
+        <div class="card soon card--active new best">
           <div class="card-picture">
             <img src="img/tab7.png" alt="Image: Tab7" class="card-image">
           </div>
-          <h4 class="card-name">Minimalist Style</h4>
+          <h4 class="card-name">Red formal</h4>
           <div class="card-block">
             <img src="img/$25.7.svg" alt="25.7" class="card-block__price">
             <img src="img/shopping-cart.svg" alt="cart" class="card-block__cart">
           </div>
         </div>
-        <div class="card soon card--active">
-          <div class="card-picture">
-            <img src="img/image.png" alt="Image: image" class="card-image">
-          </div>
+        <div class="card soon card--active new best">
+          <a href class="card-picture">
+            <img src="img/image.png" alt="Image: image" class="card-image__last">
+          </a>
           <!-- <h4 class="card-name">Swaggie Shaggy</h4>
           <div class="card-block">
             <img src="icons/$25.7.svg" alt="25.7" class="card-block__price">
@@ -228,7 +230,7 @@
               превосходно.
               Я с нетерпением жду новых коллекций от сезона к сезону
             </p>
-            <span class="slider-author">Елена Пума - клиент Fashun</span>
+            <span class="slider-author">Алисия Пума - клиент Fashun</span>
           </div>
           <div class="swiper-slide">
             <p class="slider-text">
@@ -265,50 +267,166 @@
     <!-- container -->
 
   </div>
-  <!-- feeds -->
+  <!-- /.feeds -->
 
   <section class="stories">
     <div class="container">
-      <div class="stories-wrapper">
-        <div class="stories-left">
-          <div class="stories__stamp">
-            истории
-          </div>
-          <h2 class="title stories__title"> <span class="stories__delete">Это</span> История Fashun</h2>
-          <p class="stories__subtitle">Ознакомьтесь с нашим рассказом
-          о&nbsp;моде. Написано нашим дизайнером 
-          и&nbsp;специалистом.</p>
-          <!-- /.stories__subtitle -->
-          <div class="stories-arrows">
-            <a href="#" class="stories-slider__button stories-slider__button--prev"><img src="img/Buttonleft.svg" alt="Icon: left" class="stories__button"></a>
-            <a href="#" class="stories-slider__button stories-slider__button--next"><img src="img/Buttonright.svg"
-                alt="Icon: right" class="stories__button"></a>
-          </div>
-        </div>
-        <!-- stories-left -->
-        <div class="stories-right">          
-          <div class="stories__card">
-            <img src="img/story1.jpg" alt="Image:story-1" class="stories__image">
-            <div class="stories-text">
-              <h3 class="stories-text__title">Mix & Match Style 01: повседневный и формальный стиль</h3>
-              <a href="#" class="stories-text__link link-blue">Читать далее</a>
-            </div>
-          </div>
-          <div class="stories__card">
-            <img src="img/story2.jpg" alt="Image:story-2" class="stories__image">
-            <div class="stories-text">
-              <h3 class="stories-text__title">Лайфхак: Купите одежду Thrifft на воскресном рынке</h3>
-              <a href="#" class="stories-text__link link-blue">Читать далее</a>
-            </div>
+      <span class="separator"></span>
+
+      <div class="stories__wrapper">
+        <div class="stories__text">
+          <div class="hashtag label stories__text_hashtag">Истории</div>
+
+          <h2 class="stories__text_title">Это История Fashun</h2>
+
+          <div class="stories__text_story">Ознакомьтесь с нашим рассказом 
+            о&nbsp;моде. Написано нашим дизайнером 
+            и&nbsp;специалистом.
           </div> 
-        </div>  
-        <!-- ./stories-right -->
+
+          <div class="stories__text_buttons">
+            <div class="stories__text_buttons_wrapper">
+              <img src="img/button-slider-left.svg" alt="Icon: left slider arrow"
+                class="stories__text_buttons_left swiper-button-prev">
+            </div>
+
+            <div class="stories__text_buttons_wrapper">
+              <img src="img/button-slider-right.svg" alt="Icon: right slider arrow"
+                class="stories__text_buttons_right swiper-button-next">
+            </div>
+
+          </div>
+          <!-- /.stories__text_hashtag -->
+        </div>
+        <!-- /.stories__text -->
+
+
+        <div class="stories__slider">
+          <!-- Additional required wrapper -->
+          <div class="stories__slider_wrapper">
+            <!-- Slides -->
+
+            <div class="stories__slider_wrapper_slide">
+              <div class="stories__slider_group">
+                <div class="stories__slider_group_picture">
+                  <img src="img/story-image-001.jpg" alt="Story Picture"
+                    class="stories__slider_group_picture_img">
+                </div>
+
+                <div class="stories__slider_group_description">
+                  <h3 class="stories__slider_group_description_title">Mix & Match Style 01: повседневный и
+                  формальный стиль
+                  </h3>
+                  <a href="#" class="stories__slider_group_description_link">Читать далее</a>
+                </div>
+                <!-- /.stories__slider_group_description -->
+              </div>
+              <!-- /.stories__slider_group -->
+            </div>
+
+            <div class="stories__slider_wrapper_slide">
+              <div class="stories__slider_group">
+                <div class="stories__slider_group_picture">
+                  <img src="img/story-image-002.jpg" alt="Story Picture"
+                    class="stories__slider_group_picture_img">
+                </div>
+
+                <div class="stories__slider_group_description">
+                  <h3 class="stories__slider_group_description_title">Лайфхак: Купите
+                    одежду Thrifft на
+                    воскресном рынке
+                  </h3>
+                  <a href="#" class="stories__slider_group_description_link">Читать далее</a>
+                </div>
+                <!-- /.stories__slider_group_description -->
+              </div>
+            </div>
+
+            <div class="stories__slider_wrapper_slide">
+              <div class="stories__slider_group">
+                <div class="stories__slider_group_picture">
+                  <img src="img/story-image-001.jpg" alt="Story Picture"
+                    class="stories__slider_group_picture_img">
+                </div>
+
+                <div class="stories__slider_group_description">
+                  <h3 class="stories__slider_group_description_title">Mix & Match Style 01: Casual Style x Formal
+                    Style
+                    Look
+                  </h3>
+                  <a href="#" class="stories__slider_group_description_link">Read More</a>
+                </div>
+                <!-- /.stories__slider_group_description -->
+              </div>
+            </div>
+
+            <div class="stories__slider_wrapper_slide">
+              <div class="stories__slider_group">
+                <div class="stories__slider_group_picture">
+                  <img src="img/story-image-002.jpg" alt="Story Picture"
+                    class="stories__slider_group_picture_img">
+                </div>
+
+                <div class="stories__slider_group_description">
+                  <h3 class="stories__slider_group_description_title">Tips & Trick : Buy a Thrifft Clothes on Sunday
+                    Market,
+                    YK
+                  </h3>
+                  <a href="#" class="stories__slider_group_description_link">Read More</a>
+                </div>
+                <!-- /.stories__slider_group_description -->
+              </div>
+            </div>
+
+            <div class="stories__slider_wrapper_slide">
+              <div class="stories__slider_group">
+                <div class="stories__slider_group_picture">
+                  <img src="img/story-image-001.jpg" alt="Story Picture"
+                    class="stories__slider_group_picture_img">
+                </div>
+
+                <div class="stories__slider_group_description">
+                  <h3 class="stories__slider_group_description_title">Mix & Match Style 01: Casual Style x Formal
+                    Style
+                    Look
+                  </h3>
+                  <a href="#" class="stories__slider_group_description_link">Read More</a>
+                </div>
+                <!-- /.stories__slider_group_description -->
+              </div>
+              <!-- /.stories__slider_group -->
+            </div>
+
+            <div class="stories__slider_wrapper_slide">
+              <div class="stories__slider_group">
+                <div class="stories__slider_group_picture">
+                  <img src="img/story-image-002.jpg" alt="Story Picture"
+                    class="stories__slider_group_picture_img">
+                </div>
+
+
+                <div class="stories__slider_group_description">
+                  <h3 class="stories__slider_group_description_title">Tips & Trick : Buy a Thrifft Clothes on Sunday
+                    Market,
+                    YK
+                  </h3>
+                  <a href="#" class="stories__slider_group_description_link">Read More</a>
+                </div>
+                <!-- /.stories__slider_group_description -->
+              </div>
+            </div>
+
+          </div>
+          <!-- /.stories__slider_group -->
+        </div>
+        <!-- /.stories__slider -->
+
       </div>
-      <!-- storieswrapper -->
+      <!-- /.stories__wrapper -->
     </div>
-    <!-- container -->
+    <!-- /.container -->
   </section>
-   <!-- stories -->
+  <!-- /.stories -->
 
   <section class="newsletter">
     <div class="container">

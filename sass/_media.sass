@@ -7,9 +7,27 @@
     &-menu
       &__logo
         margin-right: 0
-.main-section
+  .main-section
   &__wrapper
     margin-left: 107px
+  .stories
+    width: 972px
+    margin: auto
+    &__wrapper
+      width: 100%
+      &__text
+        max-width: 370px
+      &__slider
+        &_wrapper
+          max-width: 600px
+        &_group
+          max-width: 290px
+          margin-right: 15px
+          &_picture
+            &_img
+              width: 285px
+          &_description
+            width: 285px
 
 @media (max-width: 1200px)
   .collection
@@ -74,7 +92,58 @@
       line-height: 36px
     &__card
       margin-right: 10px
-
+  .stories
+    width: 820px
+    &__wrapper
+      margin-left: 0
+    &__text
+      max-width: 314px
+      &_title
+        font-size: 42px
+      &_story
+        font-size: 18px
+        width: 85%
+    &__slider
+      &_group
+        &_picture
+          width: 235px
+          height: 238px
+          &_img
+            width: 100%
+            height: 100%
+        &_description
+          width: 238px
+          &_title
+            font-size: 20px
+      &_wrapper
+        &_slide
+          width: 235px
+  .stories
+    width: 820px
+    &__wrapper
+      margin-left: 0
+    &__text
+      max-width: 314px
+      &_title
+        font-size: 42px
+      &_story
+        font-size: 18px
+        width: 85%
+    &__slider
+      &_group
+        &_picture
+          width: 235px
+          height: 238px
+          &_img
+            width: 100%
+            height: 100%
+        &_description
+          width: 238px
+          &_title
+            font-size: 20px
+      &_wrapper
+        &_slide
+          width: 235px
 @media (max-width: 992px)
   .container-top
     max-width: 760px
@@ -179,6 +248,56 @@
       margin-left: 39%
     &__card
       margin-right: 0px
+
+  .separator
+    margin-bottom: 80px
+  .stories
+    width: 90%
+    &__wrapper
+      flex-direction: column
+      align-items: center
+    &__text
+      max-width: 75%
+      min-height: 296px
+      margin: auto
+      align-items: center
+      &_hashtag
+        margin-bottom: 27px
+      &_title
+        margin-bottom: 16px
+        font-size: 48px
+        letter-spacing: 0.2px
+      &_story
+        text-align: center
+        margin-bottom: 36px
+        line-height: 195%
+      &_buttons
+        margin-bottom: 36px
+        &_left
+          width: 56px
+          height: 56px
+          top: 25px
+          left: 3px
+          bottom: 0
+          right: 0
+        &_right
+          width: 56px
+          height: 56px
+          top: 25px
+          left: 81px
+          bottom: 0
+          right: 0
+    &__slider
+      margin: 0
+      &_wrapper
+        max-width: 692px
+      &_group
+        max-width: 332px
+        &_picture
+          width: 322px
+          height: 317px
+        &_description
+          width: 322px
 @media (min-width: 992px)
   a
     &:hover
@@ -211,11 +330,19 @@
   .link-blue:hover
     color: grey
 
+  .stories
+    &__slider
+      &_group
+        &_description
+          &_link
+            &:hover
+              text-decoration: underline
+
 @media (max-width: 992px)
   body
     padding-top: 53px
   .button:hover
-    background-color: $text-color
+    background-color: #1565D8
     border: none
   .button-enter:hover
     background-color: white
@@ -392,6 +519,20 @@
 
   .slider-text
     max-width: 530px
+
+  .stories
+    width: 90%
+    &__text
+      max-width: 100%
+    &__slider
+      &_wrapper
+        max-width: 505px
+      &_group
+        &_picture
+          width: 231px
+          height: 238px
+        &_description
+          width: 233px
 @media (max-width: 710px)
   .collection
     &__images-wrapper
@@ -629,6 +770,26 @@
       line-height: 28px
     &-arrows
       margin-left: 4em
+  .stories
+    &__text
+      text-align: center
+      &_title
+        font-size: 46px
+        text-align: center
+      &_story
+        font-size: 16px
+    &__slider
+      &_wrapper
+        max-width: 425px
+      &_group
+        &_picture
+          width: 195px
+          height: 200px
+        &_description
+          width: 195px
+          &_title
+            font-size: 18px
+            line-height: 130%
 
   .trending
     &-title
@@ -660,3 +821,59 @@
     max-width: 280px
     font-size: 18px
     line-height: 36px
+
+  .stories
+    &__text
+      &_title
+        font-size: 46px
+      &_story
+        font-size: 16px
+    &__slider
+      &_wrapper
+        max-width: 425px
+      &_group
+        &_picture
+          width: 195px
+          height: 200px
+        &_description
+          width: 195px
+          &_title
+            font-size: 18px
+            line-height: 130%
+
+@media (max-width: 480px)
+  .stories
+    &__text
+      min-height: 282px
+      &_hashtag
+        margin-bottom: 24px
+      &_title
+        font-size: 28px
+        line-height: 36px
+      &_story
+        line-height: 28px
+      &_buttons
+        margin-bottom: 26px
+    &__slider
+      width: 100%
+      &_group
+        min-width: 100%
+        max-height: 425px
+        &_picture
+          width: 95%
+          height: 300px
+        &_description
+          width: 96%
+          min-height: 129px
+      &_wrapper
+        flex-direction: column
+        flex-wrap: wrap
+        max-width: 431px
+        max-height: 950px
+
+        &_slide
+          width: 100% !important
+          height: 100% !important
+          margin: 0 9px !important
+          align-items: center
+          justify-content: center
