@@ -1214,9 +1214,6 @@ a {
 }
 
 @media (max-width: 992px) {
-  body {
-    padding-top: 53px;
-  }
   .button:hover {
     background-color: #1565D8;
     border: none;
