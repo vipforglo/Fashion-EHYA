@@ -103,19 +103,19 @@ var mySwiper1 = new Swiper('.stories__slider', {
 });
 
 
-// Переключение табов
-$(document).ready(function () {
-  var trendingTabs = $(".trending__tabs");
-  var trendingContent = $(".trending__content");
+// // Переключение табов
+// $(document).ready(function () {
+//   var trendingTabs = $(".trending__tabs");
+//   var trendingContent = $(".trending__content");
 
-  trendingTabs.on("click", function (event) {
-    var activeContent = $(this).attr("data-target");
-    trendingTabs.removeClass("trending__tabs_active");
-    trendingContent.removeClass("trending__content_active");
-    $(activeContent).addClass("trending__content_active");
-    $(this).addClass("trending__tabs_active");
-  });
-});
+//   trendingTabs.on("click", function (event) {
+//     var activeContent = $(this).attr("data-target");
+//     trendingTabs.removeClass("trending__tabs_active");
+//     trendingContent.removeClass("trending__content_active");
+//     $(activeContent).addClass("trending__content_active");
+//     $(this).addClass("trending__tabs_active");
+//   });
+// });
 
 
 

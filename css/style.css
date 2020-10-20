@@ -146,6 +146,12 @@ body {
   font-family: Open Sans;
 }
 
+.main-section__button-link:hover {
+  background: #fff;
+  color: #183B56;
+  border: 4px solid #fff;
+}
+
 .main-section__cool {
   display: flex;
   flex-direction: column;
